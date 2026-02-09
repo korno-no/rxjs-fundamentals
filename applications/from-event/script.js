@@ -14,6 +14,8 @@ const addMessageToDOM = () => {
   notificationMessages.appendChild(notification);
 };
 
+const buttonClicks$ = fromEvent(button, 'click').subscribe(addMessageToDOM);
+
 /**
  * Your mission:
  *
